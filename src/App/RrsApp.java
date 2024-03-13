@@ -14,14 +14,15 @@ public class RrsApp {
 	while(true) {
 	    System.out.println("~~~~~~~~~~~~~~~~MENU~~~~~~~~~~~~~~");
 	    System.out.println("1.RoomInfo\n2.Rooms Availability");
-	    System.out.println("3.CheckIn\n4.Exit");
+	    System.out.println("3.CheckIn\n4.CheckOut\n5.Exit");
 	    System.out.println("============Enter Your Option=============");
 	    int op = sc.nextInt();
 	    switch(op) {
 	    case 1:r.roomInfo(); break;
 	    case 2:r.checkAvailability(); break;
-	    case 3:System.out.println("Need to be implemented ..!!"); break;
-	    case 4:System.out.println("===============Thankyou Visit Again===============");
+	    case 3:r.checkIn(); break;
+	    case 4:r.checkOut(); break;
+	    case 5:System.out.println(":):):):):):):)---Thankyou Visit Again---:):):):):):):)");
 	    	System.exit(0); break;
 	    	default:System.out.println("========================Invalid Option=====================");
 	    }

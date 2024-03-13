@@ -4,16 +4,16 @@ public class Customer {
     
     private int cid;
     private String cname;
-    private long cphno;
+    private long phno;
     private Address a;
     private double camt;
     
     //--constructor
-    public Customer(int cid, String cname, long cphno, Address a, double camt) {
+    public Customer(int cid, String cname, long phno, Address a, double camt, String roomType) {
 	super();
 	this.cid = cid;
 	this.cname = cname;
-	this.cphno = cphno;
+	this.phno = phno;
 	this.a = a;
 	this.camt = camt;
     }
@@ -30,11 +30,11 @@ public class Customer {
     public void setCname(String cname) {
         this.cname = cname;
     }
-    public long getCphno() {
-        return cphno;
+    public long getPhno() {
+        return phno;
     }
-    public void setCphno(long cphno) {
-        this.cphno = cphno;
+    public void setPhno(long phno) {
+        this.phno = phno;
     }
     public Address getA() {
         return a;
@@ -52,7 +52,7 @@ public class Customer {
     //--toString method
     @Override
     public String toString() {
-	return "Customer [cid=" + cid + ", cname=" + cname + ", cphno=" + cphno + ", a=" + a + ", camt=" + camt + "]";
+	return "Customer [cid=" + cid + ", cname=" + cname + ", cphno=" + phno + ", a=" + a + ", camt=" + camt + "]";
     }
     
     
